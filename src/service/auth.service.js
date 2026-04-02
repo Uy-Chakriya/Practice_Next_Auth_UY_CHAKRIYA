@@ -4,6 +4,7 @@ export async function loginService(data) {
     password: data.password,
   };
   console.log("this is user in service :", user);
+  // ==>> yoo check thos 
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/auths/login`, {
     method: "POST",
     headers: {
